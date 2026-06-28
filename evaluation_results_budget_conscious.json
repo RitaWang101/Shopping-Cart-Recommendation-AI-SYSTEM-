@@ -1,0 +1,134 @@
+{
+  "user_context": {
+    "user_type": "Budget-conscious family shopper",
+    "budget": 50.0,
+    "cart_total": 102.98,
+    "over_budget": 52.980000000000004,
+    "cart_items": [
+      {
+        "id": "7875624813017570385",
+        "title": "David's Cookies Mile High Peanut Butter Cake, 6.8 lbs (14 Servings)",
+        "subcat": "Dessert",
+        "price": 56.99,
+        "qty": 1
+      },
+      {
+        "id": "8602147923846103921",
+        "title": "Premium Organic Beef Ribeye Steak, 12 oz",
+        "subcat": "Meat & Seafood",
+        "price": 45.99,
+        "qty": 1
+      }
+    ]
+  },
+  "pairwise_comparisons": {
+    "budget_vs_cf": {
+      "winner": "A",
+      "reasoning": "System A, although offering a savings of only $0.99, attempts to provide a replacement within the user's budget and shopping style by suggesting a different meat product. While the replacement isn't perfect, considering it remains within the 'Meat & Seafood' category, it is more aligned with the user's budget-conscious needs compared to System B, which provides no recommendation at all.",
+      "scores": {
+        "relevance": {
+          "A": 5,
+          "B": 0
+        },
+        "savings": {
+          "A": 2,
+          "B": 0
+        },
+        "practicality": {
+          "A": 4,
+          "B": 0
+        },
+        "ux": {
+          "A": 3,
+          "B": 0
+        }
+      }
+    },
+    "budget_vs_hybrid": {
+      "winner": "A",
+      "reasoning": "System A provides a tangible recommendation aimed at reducing the cart total, although the price reduction is minimal. System B offers no recommendations, resulting in a lack of potential savings or actionable alternatives. System A's suggestion might not be very practical given the small savings and different product category, but it makes an attempt to address the user's budget concern.",
+      "scores": {
+        "relevance": {
+          "A": 5,
+          "B": 0
+        },
+        "savings": {
+          "A": 3,
+          "B": 0
+        },
+        "practicality": {
+          "A": 2,
+          "B": 0
+        },
+        "ux": {
+          "A": 4,
+          "B": 0
+        }
+      }
+    },
+    "cf_vs_hybrid": {
+      "winner": "A",
+      "reasoning": "Both systems failed to provide recommendations, leaving no immediate, tangible benefits in terms of savings or replacements. Since neither system provided data to evaluate, System A is chosen by default based on equal performance in terms of output.",
+      "scores": {
+        "relevance": {
+          "A": 0,
+          "B": 0
+        },
+        "savings": {
+          "A": 0,
+          "B": 0
+        },
+        "practicality": {
+          "A": 0,
+          "B": 0
+        },
+        "ux": {
+          "A": 0,
+          "B": 0
+        }
+      }
+    }
+  },
+  "criteria_scores": {
+    "budget_saving": {
+      "relevance": 3,
+      "savings": 2,
+      "diversity": 1,
+      "explanation_quality": 4,
+      "feasibility": 2,
+      "overall_score": 2,
+      "reasoning": "The recommendation system provides a substitution from beef to tuna, which may not align with user preferences centered on meat products. The recommended tuna product saves only $0.99, which is negligible against the user's over-budget amount. The recommendation lacks diversity, offering just one alternative with questionable suitability. Though explanations are detailed, they don't adequately convey how the swap significantly aids the user's budget or dietary needs, presenting a low feasibility for actual user acceptance."
+    },
+    "personalized_cf": {
+      "relevance": 1,
+      "savings": 1,
+      "diversity": 1,
+      "explanation_quality": 1,
+      "feasibility": 1,
+      "overall_score": 1,
+      "reasoning": "The recommendation system failed to provide any suggestions, which means it cannot address the user's budget concern or offer applicable substitutes. This results in absolute minimal scores across all categories due to an absence of data to evaluate these crucial aspects. Overall, the system's performance is poor in this scenario."
+    },
+    "hybrid_ai": {
+      "relevance": 1,
+      "savings": 1,
+      "diversity": 1,
+      "explanation_quality": 1,
+      "feasibility": 1,
+      "overall_score": 1,
+      "reasoning": "The recommendation system currently provides no recommendations, making it unable to address the user's budget constraints, product preferences, or substitution needs. Without relevant suggestions or explanations, it cannot contribute to savings or show diversity in options. The overall utility of the system in this situation is minimal."
+    }
+  },
+  "summary": {
+    "evaluation_status": "complete",
+    "overall_winner": "budget_saving",
+    "best_for_savings": "budget_saving",
+    "best_for_relevance": "budget_saving",
+    "best_for_ux": "budget_saving",
+    "key_insights": [],
+    "win_counts": {
+      "budget_saving": 2,
+      "personalized_cf": 1,
+      "hybrid_ai": 0
+    }
+  }
+}
